@@ -1,0 +1,52 @@
+{% extends 'base.html' %}
+
+{% load static %}
+
+{% block content %}
+<div class="container mt-5">
+    <div class="row">
+        <div class="col-md-6">
+            <h2>Bienvenido a DemoMath</h2>
+            <p>Este es un sitio orientado a las matemáticas y centrado específicamente en la resolución de demostraciones matemáticas. Podrás encontrar una variedad de demostraciones matemáticas y cómo se realiza una demostración paso a paso.</p>
+        </div>
+        <div class="col-md-6">
+            <img src="{% static 'images/dem1.jpg' %}" class="img-fluid" alt="Imagen de ejemplo">
+        </div>
+    </div>
+</div>
+
+<div class="container mt-5">
+    <div class="row">
+        <div class="col-md-4">
+            <div class="card" style="width: 18rem;">
+                <img class="card-img-top" src="{% static 'images/dem2.jpg' %}" alt="Card image cap">
+                <div class="card-body">
+                    <h5 class="card-title">Dem1</h5>
+                    <p class="card-text">Breve Descripción</p>
+                    <a href="{% url 'demo1' %}" class="btn btn-primary">Ir a la demostración</a>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-4">
+            <div class="card" style="width: 18rem;">
+                <img class="card-img-top" src="{% static 'images/dem3.jpg' %}" alt="Card image cap">
+                <div class="card-body">
+                    <h5 class="card-title">Dem2</h5>
+                    <p class="card-text">Breve Descripción</p>
+                    <a href="{% url 'demo2' %}" class="btn btn-primary">Ir a la demostración</a>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-4">
+            <div class="card" style="width: 18rem;">
+                <img class="card-img-top" src="{% static 'images/dem4.jpg' %}" alt="Card image cap">
+                <div class="card-body">
+                    <h5 class="card-title">Dem3</h5>
+                    <p class="card-text">Breve Descripción</p>
+                    <a href="{% url 'demo3' %}" class="btn btn-primary">Ir a la demostración</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+{% endblock content %}
